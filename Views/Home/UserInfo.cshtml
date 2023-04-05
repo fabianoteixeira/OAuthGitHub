@@ -1,0 +1,175 @@
+﻿@model GitHubOAuth.Models.GitHubUserResponse
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Avatar
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Model.avatar_url" style="height: 5rem"/>
+            @*@Html.DisplayFor(model => model.avatar_url)*@
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.login)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.login)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.node_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.node_id)
+        </dd>
+        
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gravatar_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gravatar_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.html_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.html_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.followers_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.followers_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.following_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.following_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gists_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gists_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.starred_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.starred_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.subscriptions_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.subscriptions_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.organizations_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.organizations_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.repos_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.repos_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.events_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.events_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.received_events_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.received_events_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.type)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.site_admin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.site_admin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.blog)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.blog)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.public_repos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.public_repos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.public_gists)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.public_gists)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.followers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.followers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.following)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.following)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.created_at)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.updated_at)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.updated_at)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
